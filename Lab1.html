@@ -5,58 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-      
+        body {
+            background-image: url("https://scontent.flis7-1.fna.fbcdn.net/v/t39.30808-6/431191472_122105139476238122_8659391567850739675_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lxjhutbhvWUAX9cwBOz&_nc_ht=scontent.flis7-1.fna&oh=00_AfDCVhzXl6IFJEQM4uiUcM9Jix49cV6xi15YlIQ4J79dNw&oe=65F5DDEA");
+            background-size: cover;
+            background-position: center; 
+            margin: 0;
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            color: whitesmoke; 
+            font-family: Arial, sans-serif; 
+        }
+        
         h1 {
             text-align: center;
-            
-        }
-        h2 {
-            text-align: center;
-            
+            margin-bottom: 20px; 
         }
         
         .image-container {
-            display: flex;
-            justify-content: center;
+            margin-bottom: 20px; 
+        }
+
+        .button {
+            background-color: indianred;
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px; 
+            padding: 10px 20px;
+            margin-bottom: 10px; 
+            cursor: pointer;
+            width: 200px; 
+            text-align: center; 
+        }
+
+        .button:hover {
+            background-color: #c71313; 
+        }
+
+        .forgot-password {
+            color: blue;
+            text-decoration: none;
+            border-bottom: 1px solid blue; 
+            padding-bottom: 2px;        
+            text-align: center; 
         }
     </style>
-    <link rel="stylesheet" href="style.Lab1.css">
 </head>
 <body>
     <div class="image-container">
-    <img src="https://conteudo.imguol.com.br/c/noticias/1f/2022/01/21/hacker-usando-um-laptop-1642786034169_v2_1x1.jpg" alt="" width="250">
+        <img src="https://th.bing.com/th/id/OIG4.mK_V_V.oSvNfuEU04ezR?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="" width="250">
     </div>
     
-    <h1 class="center">Nome do Projeto</h1>
+    <h1>Perez Games</h1>
 
-    
-    
-    
-  
-    <div class="container">
-        <div class="button-box">
-            <button onclick="window.location.href='Login.html'">Login</button>
-        </div>
-        <div class="button-box">
-            <button onclick="window.location.href='Registar.html'">Registar</button>
-        </div>
-    </div>
+    <button class="button" onclick="window.location.href='Login.html'">Login</button> 
+    <button class="button" onclick="window.location.href='Registar.html'">Registar</button>
 
+    <a class="forgot-password" href="Palavrapasse.html" target="_blank" title="Esqueci-me da palavra-passe">Esqueci-me da palavra-passe</a>
 
-
-
-
-
-    <h2>Resumo</h2>
-    <p>Este é o meu Resumo</p>
-    <p>Mais <b>Negrito</b> Resumo</p>
-    <p>Mais <i>italico</i> Resumo</p>
-    
-    <h2>Vídeo da minha vida</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/O3Egj1vzt2U?si=z5hQCK3nfIdj9ng1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    <h2>Página da minha vida</h2>
-    <a href="https://desporto.sapo.pt/futebol/primeira-liga/artigos/ataque-a-alcochete-uma-cronologia-dos-acontecimentos-que-levaram-bruno-de-carvalho-e-nao-so-ao-banco-dos-reus">Link</a>
 </body>
 </html>
