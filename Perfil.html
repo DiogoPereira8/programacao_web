@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <style>
+        
+        body {
+            font-family: Verdana, sans-serif;
+            background-image: url("https://scontent.flis7-1.fna.fbcdn.net/v/t39.30808-6/431191472_122105139476238122_8659391567850739675_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lxjhutbhvWUAX9cwBOz&_nc_ht=scontent.flis7-1.fna&oh=00_AfDCVhzXl6IFJEQM4uiUcM9Jix49cV6xi15YlIQ4J79dNw&oe=65F5DDEA");
+            background-size: cover;
+            background-position: center; 
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d; 
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgb(51, 51, 51);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px indianred;
+            text-align: center;
+            position: relative; /* Adiciona uma posição relativa */
+        }
+
+        h1 {
+            margin-top: 0;
+            color: indianred;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 5%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border:1.5px solid indianred ;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #d80303;
+            box-sizing: border-box;
+        }
+        .save-button {
+            background-color: #007bff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button {
+            position: absolute; 
+            top: 10px; /* Ajusta a posição para ficar no canto superior */
+            left: 10px; /* Ajusta a posição para ficar no canto superior */
+            background-color: indianred;
+            border: none; 
+            color: whitesmoke; 
+            border-radius: 5px; 
+            padding: 5px 10px; 
+            cursor: pointer; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil</h1>
+        <a href="Olá.html" class="back-button">Back</a>
+        <img src="https://th.bing.com/th/id/OIG4.mK_V_V.oSvNfuEU04ezR?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Foto de Perfil" class="profile-pic">
+        <form action="gravar_perfil.php" method="post">
+            <input type="text" name="nome" placeholder="Nome" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <button type="submit" class="save-button">Gravar</button>
+        </form>
+    </div>
+</body>
+</html>
